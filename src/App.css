@@ -1,38 +1,341 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
+ 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  
+   
+  display: flex; 
+  height: auto;
+  font-size: calc(10px + 2vmin);
+  color: rgb(0, 0, 0);
+}
+
+
+.Toolbar{
+ /* background-color: #a5bef1; */
+  width: 100%;
+  top:0;
+  left: 0;  
+  padding: 60px 200px 45px 222px;
+  box-shadow: 0px 8px 16px rgba(17, 17, 17, 0.06);
+}
+
+ 
+
+.Group{
+  display: flex;
+  flex-direction: row;
+ 
+  
+}
+
+.Frame4477{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  
+} 
+
+ 
+
+.Headline{
+  width: 11px;
+  height: 37px;
+  font-family: 'Red Hat Display', sans-serif;
+  font-style: normal;
+  /* left:222px  top:60px  */
+  color: #000000;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 152.2%;
+}
+
+.Label{
+  font-family: 'Red Hat Display';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 152.2%;
+  color: #9C9C9C;
+}
+
+.Select{
+  background: #FFFFFF;
+/* Neutral 2 (forms) */
+
+  border: 1px solid #E0E0E0;
+  box-sizing: border-box;
+  border-radius: 8px;
+  padding: 5px 20px;
+  width: 200px;
+  height: 42px;
+}
+
+.FormColumn{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-right: 13px;  
+  
 }
 
-.App-link {
-  color: #61dafb;
+.Amount{
+  width: 160px;
+  height: 42px;  
+  border: 1px solid #E0E0E0;
+  box-sizing: border-box;
+  border-radius: 8px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.Currency{
+  background: #EEEEEE;
+  width: 200px;
+  height: 42px;
+  border: 1px solid #E0E0E0;
+  box-sizing: border-box;
+  border-radius: 8px;
+}
+
+.History{
+  width: 100%;
+  min-height: 300px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.HistoryDiv{
+  width: 100%;    
+  box-sizing: border-box; 
+  height: 300px;
+}
+
+.GroupH{
+  display: flex;
+  flex-wrap: wrap;
+ 
+  justify-content: space-between;
+}
+
+ 
+
+.GroupH > div{
+  flex-basis: auto;  
+  height: 70px;
+  display: flex;
+  flex-direction: column;  
+  justify-content: flex-end;  
+   
+}
+
+.CoinDataIndicator{
+  display:flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+ 
+.ExchangeInfo{
+  position: fixed;
+  background-color: #fff;
+ /* background-color: #d9d9d999;  */
+  border-radius: 20px;
+  width: 100%;  
+  height: 406px;
+  z-index: 100;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+   
+}
+
+.ExcUp{
+  padding: 24px;
+ 
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0px 8px 16px rgba(17, 17, 17, 0.06);
+}
+
+.ExcDown{
+  display: flex;
+  padding: 24px;
+  margin-top: 15px;
+  margin-bottom: 20px;
+
+}
+
+
+.ExcCol{
+  height: 21px;
+}
+
+
+.ExcColumns{
+  display: flex;
+  flex-direction: column;
+}
+
+.CloseX{
+  width: 20px;
+  height:50px;
+  color:#000000;
+  font-size: 1.5em;
+  font-weight: 600;
+}
+
+
+.Ellipse{
+  width: 16px;
+  height: 16px;
+  background-color: #40B439;
+  border-radius: 50%;
+}
+
+.EllipseEx{
+  background-color: #6368DF;
+  width: 16px;
+  height: 16px;
+ 
+  border-radius: 50%;
+}
+
+.GroupData{
+  margin-top: 20px;
+  width: 100%;
+  height: auto;
+ 
+}
+
+.CoinData{
+  width: 100%;
+  height: 84px;
+  background-color: #EFF0F7;
+  border: 1px solid #EFF0F7;
+  box-sizing: border-box;
+  border-radius: 12px;  
+  margin: 12px 0px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 16px;
+  
+ 
+}
+
+
+
+.CoinDataInfo{
+  
+  width: 155px;
+  height: 53px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  
+  
+}
+
+ 
+
+.CoinDataName{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+   
+  height: 24px;
+  width: 113px;
+  font-family: 'Red Hat Display';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+    
+}
+
+.CoinDataPrice{
+  font-family: 'Red Hat Display';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 152.2%;
+
+}
+
+.CoinName{
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 0px 8px;
+
+}
+.CurrencyName{
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin: 0px 8px;
+}
+
+
+
+@media only screen and (min-width:601px){
+  .HistoryDiv{
+    display: none;
   }
-  to {
-    transform: rotate(360deg);
+  .ExchangeInfo{
+    display: none;
+  }
+}
+
+.Blinker {
+  animation:  Blinker 1s linear infinite;
+}
+
+@keyframes Blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+
+@media only screen and (max-width: 600px) {
+
+   .TableDiv{
+     display: none;
+   }
+    
+   .Frame4477{
+     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    
+  }
+
+  .Currency{
+    width: 100%;
+  }
+ 
+
+   .Select{
+     width: 100%;
+   }
+
+    
+   .Toolbar{
+  
+    width: 100%;
+   
+    top:0;
+    left: 0;
+    padding: 25px;
+  }
+  .FormColumn{
+    width: 100%;
+    /*  margin-right: 13px; da ne bjeze  */
+  }
+  .Amount{
+    width: 100%;
   }
 }

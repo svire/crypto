@@ -1,0 +1,77 @@
+.Main{
+    width: 100%;
+    padding:80px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.Table{
+    width: 1000px;
+    background-color: rgb(162, 63, 63);
+    text-align: center;
+    border-collapse: collapse;
+    
+}
+
+.Table tr th{
+    cursor: pointer;
+
+}
+.Table tr th:hover{
+    background-color: #797575;
+}
+
+
+.Table tr{
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 152.2%;
+}
+
+.Table tr:hover{
+    border: 1px solid #000000;
+}
+
+.Table th{
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 152.2%;
+    width: 150px;
+}
+
+ 
+
+.Table tbody tr{
+    height: 54px;
+}
+.Table{
+    text-align: left;
+}
+
+.Table tbody tr:nth-last-of-type(odd) {
+    background-color: #ffffff;
+  }
+  .Table tbody tr:nth-last-of-type(even) {
+     
+    background-color: #eeeeee;
+  }
+
+ 
+
+.DateTime{
+    width: 116px;    
+}
+
+.tdLive{
+    color: #5DBE7E
+}
+
+.tdExchange{
+    color:#6368DF
+}
+ 

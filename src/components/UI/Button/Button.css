@@ -1,0 +1,44 @@
+.Button{
+    width: 84px;
+    height: 40px;    
+
+    color:#ffffff;
+    background: #49CD5E;
+    border-radius: 8px;
+    padding: 0;
+    border: none;
+    font-family: 'Red Hat Display';
+    font-style: normal;     
+    font-size: 16px;
+    line-height: 100%;
+    bottom: 0;
+}
+
+.ButtonSmall{
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    color: #1B31A8;
+    background-color: #ffffff;
+    height: 42px;
+    width: 65px;
+    border-radius: 8px;
+   
+    border:1px solid #1B31A8;
+}
+
+@media only screen and (max-width: 600px) {
+
+.Button{
+    width: 100%;
+    margin-top: 20px;
+    margin-right: 13px;
+}
+
+
+
+
+
+}
